@@ -1,0 +1,132 @@
+@import 'normalize'
+@import 'bootstrap.min'
+@import 'vendor'
+@import 'styles'
+
+
+body
+  overflow-x: hidden
+
+.container-fluid >
+  .navbar-collapse, .navbar-header
+    margin-right: 0px
+
+.container >
+  .navbar-collapse, .navbar-header
+    margin-right: 0px
+
+.navbar
+  .navbar-nav
+    display: inline-block
+    float: none
+  .navbar-collapse
+    text-align: center
+
+.container-fluid
+  padding-right: 0
+  padding-left: 0
+
+.farmer
+  height: 15rem
+  width: 15rem
+  -webkit-transform: rotate(90deg)
+  -ms-transform: rotate(90deg)
+  transform: rotate(90deg)
+  margin-left: -43%
+
+.consumer
+  height: 15rem
+  width: 15rem
+  -webkit-transform: rotate(-90deg)
+  -ms-transform: rotate(-90deg)
+  transform: rotate(-90deg)
+  margin-left: 87%
+
+h1
+  vertical-align: middle
+  text-align: center
+  font-size: 2.5rem
+
+#header
+  background: url(../img/restaurant_icons.png)
+  background-repeat: repeat
+
+
+#features
+  padding: 9rem
+  background: #2CCFAE
+
+#faq
+  padding: 9rem
+  background: #ECA042
+
+#produce img
+  height: 10em
+  width: 10em
+
+.header-privacy
+  background: #A23538
+  padding: 12rem
+  color: white
+  text-transform: uppercase
+
+.header-terms h1, .header-privacy h1
+  font-size: 5rem
+
+.header-terms
+  background: #3C79AB
+  padding: 12rem
+  color: white
+  text-transform: uppercase
+
+.form-control
+  height: 68px
+  font-size: 1.25em
+
+.about-moi
+  min-width: 200px
+  font-weight: 100
+
+
+#submit
+  font-size: 1.25em
+  padding: 1.2em
+  width: 155%
+
+#footbanner
+  color: #ffffff
+  padding: 6rem
+  background: #164F65
+  h4 a
+    text-decoration: none
+    color: #ffffff
+
+#about-me
+  background: url(../img/farm_banner.jpg)
+  filter: alpha(opacity=60)
+  background-size: cover
+  background-repeat: no-repeat
+  padding: 12em
+
+h4
+  color: white
+  line-height: 1.5
+h5
+  font-size: 120%
+  line-height: 1.2
+.white
+  color: white
+
+#about-me img
+  width: 20rem
+  height: 20rem
+
+@media only screen and (max-width: 992px)
+  .farmer, .consumer
+    display: none
+  #about-me
+    display: none
+
+@media only screen and (min-width: 1114px) and (max-width: 1199px)
+  .farmer
+    margin-left: -45%
